@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>UltimateBackupReplacement</AssemblyName>
+    <RootNamespace>UltimateBackupReplacement</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      ВАЖНО: эти DLL не входят в проект и не скачиваются автоматически -
+      у RAGE Plugin Hook нет публичного NuGet-пакета, только прямая раздача с сайта.
+      Скопируй файлы из своей папки установки RPH в папку lib/ этого проекта.
+      Смотри README.md - там точные шаги.
+    -->
+    <Reference Include="RAGEPluginHook">
+      <HintPath>lib\RAGEPluginHook.exe</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- RAGENativeUI не используется - весь UI планшета на WPF (UI/Views/TabletWindow.xaml).
+         Если понадобится нативное меню (например для быстрого radial-меню поверх WPF-планшета) -
+         верни референс сюда. -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="lib\**" />
+  </ItemGroup>
+
+  <!-- WPF SDK (Microsoft.NET.Sdk.WindowsDesktop + UseWPF) сам подхватывает *.xaml
+       как Page по конвенции - явный ItemGroup не обязателен, оставлен для ясности. -->
+  <ItemGroup>
+    <Page Update="UI\Views\TabletWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
