@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\FJ\\UltimateBackupReplacement\\UltimateBackupReplacement.csproj": {}
+  },
+  "projects": {
+    "C:\\FJ\\UltimateBackupReplacement\\UltimateBackupReplacement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\FJ\\UltimateBackupReplacement\\UltimateBackupReplacement.csproj",
+        "projectName": "UltimateBackupReplacement",
+        "projectPath": "C:\\FJ\\UltimateBackupReplacement\\UltimateBackupReplacement.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\FJ\\UltimateBackupReplacement\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

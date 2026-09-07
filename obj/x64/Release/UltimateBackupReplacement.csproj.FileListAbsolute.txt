@@ -1,0 +1,3 @@
+C:\FJ\UltimateBackupReplacement\obj\x64\Release\UltimateBackupReplacement.csproj.AssemblyReference.cache
+C:\FJ\UltimateBackupReplacement\obj\x64\Release\UltimateBackupReplacement.GeneratedMSBuildEditorConfig.editorconfig
+C:\FJ\UltimateBackupReplacement\obj\x64\Release\UltimateBackupReplacement.csproj.CoreCompileInputs.cache

@@ -1,0 +1,1 @@
+Положи сюда: RAGEPluginHook.exe и RAGENativeUI.dll (см. README.md)
